@@ -113,65 +113,6 @@
     <div id="content"></div>
 </body>
 
-<!-- 
-<script>
-  const embedded = document.getElementById("content");
-   window.addEventListener("message", function (event) {
-      // You could add origin checks here for security
-      if (event.data && event.data.action === "toggleFullscreen") {
-        if (!document.fullscreenElement) {
-          
-          if (embedded.requestFullscreen) {
-            embedded.requestFullscreen();
-          } else if (embedded.webkitRequestFullscreen) {
-            embedded.webkitRequestFullscreen();
-          } else if (embedded.msRequestFullscreen) {
-            embedded.msRequestFullscreen();
-          }
-        } else {
-          if (document.exitFullscreen) {
-            document.exitFullscreen();
-          }
-        }
-      }
-    });
-
-   
-</script>
-
-
-
-
-
-<script>
-    function load_home() {
-        var isMobile = window.innerWidth <= 1115;
-        var folderPath = isMobile ? 'For_Desc/index.html' : 'For_Desc/index.html';
-        if (!document.getElementById("content")) {
-            console.error("Content element not found");
-            return;
-        }
-        document.getElementById("content").innerHTML =
-            '<object type="text/html" data="' + folderPath + '" style="width:100%; height:600px;"></object>';
-    }
-    window.onload = load_home;
-</script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const preloader = document.getElementById("preloader");
-
-      // Keep preloader visible for a bit longer (e.g., 2.5 seconds)
-      setTimeout(() => {
-        preloader.classList.add("fade-out");
-
-        // Remove preloader from DOM after fade-out completes
-        setTimeout(() => {
-          preloader.style.display = "none";
-        }, 1000); 
-      }, 3000); 
-    });
-  </script> -->
     <script>
      const preloader  = document.getElementById("preloader");
 const contentDiv = document.getElementById("content");

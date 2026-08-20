@@ -335,10 +335,17 @@
       <audio id="navAudio"></audio>
 
 
-      <div>
+      <!-- <div>
         <img id="goToPage1" data-audio-path="../audios/home.mp3" data-page="1"
           src="../global assets/Images/TableOfContent/home-icon.svg" alt="home-icon" class="home-button hidden" />
-      </div>
+      </div> -->
+
+      <div>
+  <a href="https://airlockintl.co.in/index.html" class="back-button flex items-center gap-2">
+    <img src="../global-assets/navbar-icons/back.png" alt="back-icon" class="w-[1vw]" />
+    Back
+  </a>
+</div>
 
 
       <!-- ========== MOBILE NAV BAR (mobile/tablet only) ========== -->
@@ -356,9 +363,16 @@
           <img src="../global-assets/Airlock-Logo.gif" alt="logo" class=" w-[100px] z-[11111] cursor-pointer tb-link" data-page="1" />
 
         <!-- Right: three dots -->
-        <button id="mobileDotsBtn" class="mob-icon-btn mob-dots-btn" aria-label="More options">
-          <span class="mob-dots"><span></span><span></span><span></span></span>
-        </button>
+               <!-- Right: back button & three dots -->
+        <div class="flex items-center gap-2">
+          <a href="https://airlockintl.co.in/index.html" class="mob-back-btn" aria-label="Back">
+            <img src="../global-assets/navbar-icons/back.png" alt="back-icon" class="mob-back-icon" />
+          </a>
+          <button id="mobileDotsBtn" class="mob-icon-btn mob-dots-btn" aria-label="More options">
+            <span class="mob-dots"><span></span><span></span><span></span></span>
+          </button>
+        </div>
+
       </div>
 
       <!-- TOC popup -->
